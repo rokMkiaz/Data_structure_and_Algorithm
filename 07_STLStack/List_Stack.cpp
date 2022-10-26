@@ -24,6 +24,6 @@ void main()
 		if (stack.IsEmpty() == false)
 			printf("Top : %s\n", stack.Top()->Data.c_str());
 		else
-			printf("Stack is empty\n");
+			printf("Stack is empty\n");2
 	}
 }
