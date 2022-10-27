@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6c3b2a8a-089c-4c1d-9c01-ff9a0ac5dc42}</ProjectGuid>
-    <RootNamespace>My09Queue</RootNamespace>
+    <ProjectGuid>{398127fe-1ae3-4b66-976b-eb03242b07a1}</ProjectGuid>
+    <RootNamespace>My14BinaryTree</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,16 +127,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Circular_Queue.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Linked_Queue.cpp" />
+    <ClInclude Include="BTree.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Circular_Queue.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="Linked_Queue.h" />
+    <ClCompile Include="Order.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

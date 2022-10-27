@@ -74,7 +74,7 @@ public:
 	
 
 private:
-	T* datas; //배열을 저장할 변수
+	T* datas =NULL; //배열을 저장할 변수
 	int capacity;
 	int front = 0; //앞
 	int rear = 0;  //뒤
