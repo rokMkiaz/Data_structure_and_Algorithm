@@ -50,20 +50,21 @@ void InsertHead(Node** head, Node* node) //밀기
 }
 void Remove(Node** head, Node* remove) //구간 삭제
 {
-	if (*head == remove)
+	if (*head == remove) //헤드와 remove가 같다면 헤드에 remove.Next를 가리키게 해준다.
 	{
 		*head = remove->Next;
 	}
 	else
 	{
-		Node* current = *head;
+		Node* current = *head; 
 		while (current != NULL && current->Next != remove)
 		{
+			//현재 노드가 remove대상을 찾을 때 까지 탐색
 			current = current->Next;
 		}
 		if (current != NULL)
 		{
-			current->Next = remove->Next;
+			current->Next = remove->Next; //삭제할 대상의 다음을 가리킨다.
 		}
 	}
 }
