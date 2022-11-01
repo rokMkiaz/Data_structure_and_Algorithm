@@ -32,11 +32,11 @@ void Push(Node** head, Node* node)
 	{
 		Node* tail = *head;
 
-		while (tail->Next != NULL)
+		while (tail->Next != NULL) //뒷부분 찾기
 			tail = tail->Next;
 
-		tail->Next = node;
-		node->Prev = tail;
+		tail->Next = node; //신규노드 이어주기
+		node->Prev = tail; //앞부분 이어주기
 	}
 }
 
@@ -57,6 +57,7 @@ void InsertHead(Node** head, Node* node)
 		*head = node;
 	else
 	{
+		(*head)->Prev = node;
 		node->Next = *head;
 		*head = node;
 	}
