@@ -36,7 +36,7 @@ public:
 		datas[position] = data;
 	}
 
-	T Dequeue()
+	T Dequeue()//Á¦°Å
 	{
 		int position = front;
 
