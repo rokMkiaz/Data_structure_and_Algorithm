@@ -12,3 +12,6 @@
 ### Stack
 ![스택택](https://user-images.githubusercontent.com/93506849/199390754-73387262-aaba-4a42-8291-3a1da4e94db2.JPG)
 - 배열/연결리스트로 구현이 가능, 함수의 지역 변수 혹은 돌아갈 주소에 사용할 때 Stack frame을 사용한다. 함수들은 전부 Stack을 사용하며, 재귀함수를 추적할 때 Stack이 적합하다. 입력된 자료의 순서를 뒤집을 때 사용.
+### Queue
+![Queue](https://user-images.githubusercontent.com/93506849/200154570-593a84e9-33cb-4c5b-9326-ed0ea0cb9c55.JPG)
+- Circular Queue/ Linked List Queue로 구현이 가능, 1차원적인 선입 선출의 구조로 앞순서 부터 먼저처리해야 할때 주로 사용된다.(Window Procedure의 Message Queue)
