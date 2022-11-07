@@ -29,7 +29,7 @@ public:
 
 		printf("%c\n", node->Data);
 
-		if (node->LeftChild != NULL) //¹ØÀ¸·Î ³»·Á°¡´Â °Í
+		if (node->LeftChild != NULL) //ÁÂÃø ¹ØÀ¸·Î ³»·Á°¡´Â °Í
 			PrintNode(node->LeftChild, depth + 1);
 
 		if (node->RightSibiling != NULL)  //Àç±Í¸¦ Åº´Ù

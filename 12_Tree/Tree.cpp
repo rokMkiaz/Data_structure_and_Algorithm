@@ -5,6 +5,8 @@ void main()
 {
 	typedef Tree<char> T;
 
+	//Tree<char>::Node* root = Tree<char>::CreateNode('A');
+
 	T::Node* Root = T::CreateNode('A');
 
 	T::Node* B = T::CreateNode('B');
