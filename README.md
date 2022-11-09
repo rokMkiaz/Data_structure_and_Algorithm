@@ -15,3 +15,7 @@
 ### Queue
 ![Queue](https://user-images.githubusercontent.com/93506849/200154570-593a84e9-33cb-4c5b-9326-ed0ea0cb9c55.JPG)
 - Circular Queue/ Linked List Queue로 구현이 가능, 1차원적인 선입 선출의 구조로 앞순서 부터 먼저처리해야 할때 주로 사용된다.(Window Procedure의 Message Queue)
+### Left Child Right Sibling
+![트리구조도](https://user-images.githubusercontent.com/93506849/200729978-5a944179-6f44-4105-900e-4f8421b65331.JPG)
+- 탐색 트리 중 가장 기초적인 형태의 트리 구조이다. 좌측에 자식 클래스, 우측에는 형제 노드를 연결 시킨다.
+- 검색엔진, DBMS, 라우터 등 계층적 데이터를 다루는 곳에 사용된다.
