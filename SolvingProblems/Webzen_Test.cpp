@@ -27,6 +27,26 @@ int Factorial(int num)
 
 int main()
 {
+	//Struct 사이즈 문제
+	struct Struct
+	{
+		int a;  // 8바이트 구간
+		char d; // 4+1 byte사용중
+
+		union Union  //메모리를 공유한다.
+		{
+			float A;
+			double B; //8바이트
+		}myUnion; 
+		
+		int c;	//8바이트 구간
+		char b;	//4+1 byte사용중
+	}; //구조체의 사이즈 구하는 문제인데, 가장 큰 메모리 구간과 할당 위치에 대해 알아야한다.
+
+	sizeof(Struct); //24바이트 사용
+
+
+
 	//Shuffle
 	srand(time(NULL));
 
