@@ -81,6 +81,10 @@ void main()
 	tree.Root(root);
 
 	printf("PreOrder\n");
+	tree.PreOrder(root);
+	printf("\n\n");
+
+	printf("InOrder\n");
 	tree.InOrder(root);
 	printf("\n\n");
 

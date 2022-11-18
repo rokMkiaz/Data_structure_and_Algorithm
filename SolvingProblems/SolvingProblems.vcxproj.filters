@@ -2,5 +2,16 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Webzen_Test.cpp" />
+    <ClCompile Include="기사단원의 무기.cpp">
+      <Filter>CodingTest</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자타자대회.cpp">
+      <Filter>CodingTest</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CodingTest">
+      <UniqueIdentifier>{7f477c94-b241-447b-8ee8-5e1e9422f055}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
