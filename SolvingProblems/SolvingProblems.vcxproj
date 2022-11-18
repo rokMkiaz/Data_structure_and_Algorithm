@@ -131,6 +131,7 @@
     <ClCompile Include="Webzen_Test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="숫자 카드 나누기.cpp" />
     <ClCompile Include="숫자타자대회.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
