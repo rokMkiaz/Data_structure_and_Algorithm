@@ -2,19 +2,49 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="Webzen_Test.cpp" />
-    <ClCompile Include="기사단원의 무기.cpp">
-      <Filter>CodingTest</Filter>
-    </ClCompile>
     <ClCompile Include="숫자타자대회.cpp">
-      <Filter>CodingTest</Filter>
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="기사단원의 무기.cpp">
+      <Filter>CodingTest\값</Filter>
     </ClCompile>
     <ClCompile Include="숫자 카드 나누기.cpp">
-      <Filter>CodingTest</Filter>
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="푸드 파이트 대회.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="부대복귀.cpp">
+      <Filter>CodingTest\최적경로</Filter>
+    </ClCompile>
+    <ClCompile Include="우박수열 정적분.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="햄버거 만들기.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="야간전술보행.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="콜라.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="롤케이크 자르기.cpp">
+      <Filter>CodingTest\정렬</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">
       <UniqueIdentifier>{7f477c94-b241-447b-8ee8-5e1e9422f055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodingTest\값">
+      <UniqueIdentifier>{4bc42217-c60c-4ae6-b7d8-7bb82e10b070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodingTest\정렬">
+      <UniqueIdentifier>{28bcb9a9-3f34-4b4e-b622-894c250bc96b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodingTest\최적경로">
+      <UniqueIdentifier>{6f918f0e-d712-46b3-bc29-2d5d308fdc5f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
