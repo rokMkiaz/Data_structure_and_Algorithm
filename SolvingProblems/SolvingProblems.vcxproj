@@ -127,17 +127,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2차원 동전 뒤집기.cpp" />
     <ClCompile Include="기사단원의 무기.cpp" />
     <ClCompile Include="Webzen_Test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="롤케이크 자르기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
+    <ClCompile Include="삼총사.cpp" />
     <ClCompile Include="숫자 카드 나누기.cpp" />
     <ClCompile Include="숫자타자대회.cpp" />
     <ClCompile Include="야간전술보행.cpp" />
     <ClCompile Include="우박수열 정적분.cpp" />
     <ClCompile Include="콜라.cpp" />
+    <ClCompile Include="택배상자.cpp" />
     <ClCompile Include="푸드 파이트 대회.cpp" />
     <ClCompile Include="햄버거 만들기.cpp" />
   </ItemGroup>

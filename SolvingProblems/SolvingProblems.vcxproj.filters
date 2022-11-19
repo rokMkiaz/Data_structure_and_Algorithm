@@ -8,9 +8,6 @@
     <ClCompile Include="기사단원의 무기.cpp">
       <Filter>CodingTest\값</Filter>
     </ClCompile>
-    <ClCompile Include="숫자 카드 나누기.cpp">
-      <Filter>CodingTest\값</Filter>
-    </ClCompile>
     <ClCompile Include="푸드 파이트 대회.cpp">
       <Filter>CodingTest\정렬</Filter>
     </ClCompile>
@@ -20,16 +17,28 @@
     <ClCompile Include="우박수열 정적분.cpp">
       <Filter>CodingTest\값</Filter>
     </ClCompile>
-    <ClCompile Include="햄버거 만들기.cpp">
-      <Filter>CodingTest\정렬</Filter>
-    </ClCompile>
-    <ClCompile Include="야간전술보행.cpp">
-      <Filter>CodingTest\값</Filter>
-    </ClCompile>
     <ClCompile Include="콜라.cpp">
       <Filter>CodingTest\값</Filter>
     </ClCompile>
     <ClCompile Include="롤케이크 자르기.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="삼총사.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="야간전술보행.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="숫자 카드 나누기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="햄버거 만들기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="택배상자.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="2차원 동전 뒤집기.cpp">
       <Filter>CodingTest\정렬</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,6 +54,9 @@
     </Filter>
     <Filter Include="CodingTest\최적경로">
       <UniqueIdentifier>{6f918f0e-d712-46b3-bc29-2d5d308fdc5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodingTest\탐색">
+      <UniqueIdentifier>{3e8c5f70-6932-4e0c-aae3-39042b05d953}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
