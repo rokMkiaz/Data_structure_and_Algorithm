@@ -1,0 +1,58 @@
+/*
+연속된 세 개의 정수를 더해 12가 되는 경우는 3, 4, 5입니다. 두 정수 num과 total이 주어집니다.
+연속된 수 num개를 더한 값이 total이 될 때, 정수 배열을 오름차순으로 담아 return하도록
+solution함수를 완성해보세요.
+
+* 제한사항
+1 ≤ num ≤ 100
+0 ≤ total ≤ 1000
+num개의 연속된 수를 더하여 total이 될 수 없는 테스트 케이스는 없습니다.
+
+* 입출력 예
+num			total			result
+3			12				[3, 4, 5]
+5			15				[1, 2, 3, 4, 5]
+4			14				[2, 3, 4, 5]
+5			5				[-1, 0, 1, 2, 3]
+
+
+* 입출력 예 #1
+num = 3, total = 12인 경우 [3, 4, 5]를 return합니다.
+
+* 입출력 예 #2
+num = 5, total = 15인 경우 [1, 2, 3, 4, 5]를 return합니다.
+
+* 입출력 예 #3
+4개의 연속된 수를 더해 14가 되는 경우는 2, 3, 4, 5입니다.
+
+1. num이 짝수인 경우, 중간값을 기준으로 양쪽의 길이가 다릅니다.
+(total/num)-(num/2)+1을 idx로 저장
+
+2.num이 홀수인 경우, 중간값을 기준으로 양쪽의 길이가 같습니다.
+(total/num)-(num/2)을 idx로 저장
+
+3.저장한 값부터 (total/num)+(num/2)까지 answer에 저장합니다.
+ex) num=3, total=12 -> total/num=4, num/2=1 -> 홀수이기 때문에 3부터 5까지 저장
+
+*/
+
+#include <string>
+#include <vector>
+
+using namespace std;
+
+vector<int> solution(int num, int total) 
+{
+    vector<int> answer;
+    int n = total / num;
+    int m = num / 2;
+    int idx = 0;
+
+    if (num % 2 == 0) idx = n - m + 1;
+    else idx = n - m;
+
+    for (int i = idx; i <= n + m; i++)
+        answer.push_back(i);
+
+    return answer;
+}

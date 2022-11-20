@@ -52,16 +52,16 @@ using namespace std;
 
 vector<int> edge[100001];
 
-vector<int> solution(int n, vector<vector<int>> roads, vector<int> sources, int destination)
+vector<int> solution(int n, vector<vector<int>> roads, vector<int> sources, int destination)//3, [[1, 2], [2, 3]]  ,  [2, 3]	,1	
 {
-    vector<int> answer(sources.size());
+    vector<int> answer(sources.size()); // 2
 
-    vector<int> costFromDestination(n + 1, -1);
+    vector<int> costFromDestination(n + 1, -1); // 3,-1
 
     // make edge
     for (int i = 0; i < roads.size(); i++) //위치 만들기
     {
-        edge[roads[i][0]].push_back(roads[i][1]); 
+        edge[roads[i][0]].push_back(roads[i][1]); //edge에 다넣어준다. [[1, 2], [2, 3]] 
         edge[roads[i][1]].push_back(roads[i][0]);
     }
 

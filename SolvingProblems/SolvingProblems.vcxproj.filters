@@ -41,6 +41,45 @@
     <ClCompile Include="2차원 동전 뒤집기.cpp">
       <Filter>CodingTest\정렬</Filter>
     </ClCompile>
+    <ClCompile Include="숫자짝궁.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="할인행사.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="다음에 올 숫자.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="연속된 수의 합.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="종이 자르기.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 밀기.cpp">
+      <Filter>CodingTest\최적경로</Filter>
+    </ClCompile>
+    <ClCompile Include="잘라서 배열로 저장하기.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="7의 개수.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="제곱수 판별하기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="OX퀴즈.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="자릿수 더하기.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="n의 배수 고르기.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
+    <ClCompile Include="문자열 계산하기.cpp">
+      <Filter>CodingTest\값</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">

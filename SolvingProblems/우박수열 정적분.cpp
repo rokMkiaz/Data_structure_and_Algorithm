@@ -55,7 +55,8 @@ k	            ranges	                          result
 
 using namespace std;
 
-vector<double> solution(int k, vector<vector<int>> ranges) {
+vector<double> solution(int k, vector<vector<int>> ranges)
+{
     vector<double> answer;
     vector<double> x;
 

@@ -45,7 +45,7 @@ void find_candidate(int num)//약수 찾기
 
 int check()
 {
-    int ret = 0;
+    int ret = 0; 
     for (auto c : candidate) 
     {
         int flag = 1;
