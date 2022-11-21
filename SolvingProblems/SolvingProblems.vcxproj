@@ -129,31 +129,47 @@
   <ItemGroup>
     <ClCompile Include="2차원 동전 뒤집기.cpp" />
     <ClCompile Include="7의 개수.cpp" />
+    <ClCompile Include="A로 B 만들기.cpp" />
     <ClCompile Include="n의 배수 고르기.cpp" />
     <ClCompile Include="OX퀴즈.cpp" />
+    <ClCompile Include="가까운 수.cpp" />
+    <ClCompile Include="겹치는 선분의 길이.cpp" />
     <ClCompile Include="기사단원의 무기.cpp" />
     <ClCompile Include="Webzen_Test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="다음에 올 숫자.cpp" />
+    <ClCompile Include="대문자와 소문자.cpp" />
+    <ClCompile Include="로그인성공.cpp" />
     <ClCompile Include="롤케이크 자르기.cpp" />
     <ClCompile Include="문자열 계산하기.cpp" />
     <ClCompile Include="문자열 밀기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
+    <ClCompile Include="삼각형의 완성조건.cpp" />
     <ClCompile Include="삼총사.cpp" />
     <ClCompile Include="숫자 카드 나누기.cpp" />
     <ClCompile Include="숫자짝궁.cpp" />
     <ClCompile Include="숫자타자대회.cpp" />
+    <ClCompile Include="암호 해독.cpp" />
     <ClCompile Include="야간전술보행.cpp" />
+    <ClCompile Include="약수 구하기.cpp" />
     <ClCompile Include="연속된 수의 합.cpp" />
+    <ClCompile Include="영어가 싫어요.cpp" />
     <ClCompile Include="우박수열 정적분.cpp" />
+    <ClCompile Include="유한소수 판별하기.cpp" />
+    <ClCompile Include="인덱스 바꾸기.cpp" />
     <ClCompile Include="자릿수 더하기.cpp" />
     <ClCompile Include="잘라서 배열로 저장하기.cpp" />
     <ClCompile Include="제곱수 판별하기.cpp" />
     <ClCompile Include="종이 자르기.cpp" />
+    <ClCompile Include="중복된 문자제거.cpp" />
+    <ClCompile Include="치킨 쿠폰.cpp" />
     <ClCompile Include="콜라.cpp" />
     <ClCompile Include="택배상자.cpp" />
+    <ClCompile Include="특이한 정렬.cpp" />
+    <ClCompile Include="편지.cpp" />
     <ClCompile Include="푸드 파이트 대회.cpp" />
+    <ClCompile Include="한 번만 등장한 문자.cpp" />
     <ClCompile Include="할인행사.cpp" />
     <ClCompile Include="햄버거 만들기.cpp" />
   </ItemGroup>

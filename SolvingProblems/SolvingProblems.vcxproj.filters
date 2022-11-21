@@ -6,7 +6,7 @@
       <Filter>CodingTest\정렬</Filter>
     </ClCompile>
     <ClCompile Include="기사단원의 무기.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="푸드 파이트 대회.cpp">
       <Filter>CodingTest\정렬</Filter>
@@ -15,10 +15,10 @@
       <Filter>CodingTest\최적경로</Filter>
     </ClCompile>
     <ClCompile Include="우박수열 정적분.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="콜라.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="롤케이크 자르기.cpp">
       <Filter>CodingTest\정렬</Filter>
@@ -51,10 +51,10 @@
       <Filter>CodingTest\탐색</Filter>
     </ClCompile>
     <ClCompile Include="연속된 수의 합.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="종이 자르기.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="문자열 밀기.cpp">
       <Filter>CodingTest\최적경로</Filter>
@@ -69,24 +69,69 @@
       <Filter>CodingTest\탐색</Filter>
     </ClCompile>
     <ClCompile Include="OX퀴즈.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="자릿수 더하기.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="n의 배수 고르기.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
     <ClCompile Include="문자열 계산하기.cpp">
-      <Filter>CodingTest\값</Filter>
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="편지.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="약수 구하기.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="한 번만 등장한 문자.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="인덱스 바꾸기.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="영어가 싫어요.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="대문자와 소문자.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="암호 해독.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="가까운 수.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="삼각형의 완성조건.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="중복된 문자제거.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="A로 B 만들기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="치킨 쿠폰.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="로그인성공.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="특이한 정렬.cpp">
+      <Filter>CodingTest\정렬</Filter>
+    </ClCompile>
+    <ClCompile Include="유한소수 판별하기.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="겹치는 선분의 길이.cpp">
+      <Filter>CodingTest\분석</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">
       <UniqueIdentifier>{7f477c94-b241-447b-8ee8-5e1e9422f055}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="CodingTest\값">
-      <UniqueIdentifier>{4bc42217-c60c-4ae6-b7d8-7bb82e10b070}</UniqueIdentifier>
     </Filter>
     <Filter Include="CodingTest\정렬">
       <UniqueIdentifier>{28bcb9a9-3f34-4b4e-b622-894c250bc96b}</UniqueIdentifier>
@@ -96,6 +141,9 @@
     </Filter>
     <Filter Include="CodingTest\탐색">
       <UniqueIdentifier>{3e8c5f70-6932-4e0c-aae3-39042b05d953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodingTest\분석">
+      <UniqueIdentifier>{4bc42217-c60c-4ae6-b7d8-7bb82e10b070}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
