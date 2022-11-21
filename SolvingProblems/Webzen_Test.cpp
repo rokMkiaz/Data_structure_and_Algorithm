@@ -23,6 +23,27 @@ int Factorial(int num)
 
 	return num * Factorial(num - 1);
 }
+//Àç±Í ¾øÀÌ ÆÑÅä¸®¾ó
+#include <string>
+#include <vector>
+
+using namespace std;
+
+int solution(int n) {
+	int tmp = 1;
+	int answer = 1;
+	while (tmp < n)
+	{
+		answer++;
+		tmp *= answer;
+		if (tmp > n)
+		{
+			answer--;
+			break;
+		}
+	}
+	return answer;
+}
 
 
 int main()
