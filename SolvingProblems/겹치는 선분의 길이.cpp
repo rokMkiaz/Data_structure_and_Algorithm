@@ -48,6 +48,7 @@ int solution(vector<vector<int>> lines) {
     }
     for (auto it : map) {
         if (it.second > 1) answer++;
+        
     }
 
     return answer;

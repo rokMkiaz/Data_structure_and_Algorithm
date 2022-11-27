@@ -51,6 +51,8 @@ k			m					score				        	result
 #include <vector>
 #include <algorithm> //sort사용
 
+#include<map>
+
 using namespace std;
 
 int solution(int k, int m, vector<int> score) 
@@ -59,6 +61,8 @@ int solution(int k, int m, vector<int> score)
 
     sort(score.begin(), score.end(), greater<>()); //내림차순으로 정렬
 
+
+    
     for (int i = 0; i < score.size() / m; i++)//m 으로 나눌 경우 나머지는 버려진다.(고로 박스에는 m개씩만 들어감.)
     { 
         vector<int> v(score.begin() + i * m, score.begin() + (i + 1) * m); //m개씩 넣기

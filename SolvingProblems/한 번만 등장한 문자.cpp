@@ -38,14 +38,18 @@ string solution(string s) {
     for (const auto v : s)
     {
         m[v]++;
+        
+        
     }
-
+ 
     for (const auto& v : m)
     {
         if (v.second == 1)
         {
             answer.push_back(v.first);
+            
         }
+        
     }
     return answer;
 }

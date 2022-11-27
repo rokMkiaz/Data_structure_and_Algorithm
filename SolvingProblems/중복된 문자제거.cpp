@@ -24,6 +24,8 @@ my_string				result
 #include <string>
 #include <vector>
 
+#include<map>
+
 using namespace std;
 
 string solution(string my_string) {
@@ -32,4 +34,5 @@ string solution(string my_string) {
         if (answer.find(i) == string::npos)answer += i;
     }
     return answer;
+
 }
