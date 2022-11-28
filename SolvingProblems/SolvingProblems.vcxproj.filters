@@ -176,6 +176,12 @@
     <ClCompile Include="나머지가 1이되는 수 찾기.cpp">
       <Filter>CodingTest\탐색</Filter>
     </ClCompile>
+    <ClCompile Include="명예의 전당(1).cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
+    <ClCompile Include="전령망을 둘로 나누기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">

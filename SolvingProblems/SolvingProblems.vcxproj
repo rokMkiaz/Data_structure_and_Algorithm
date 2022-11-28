@@ -148,6 +148,7 @@
     <ClCompile Include="등산코스 정하기.cpp" />
     <ClCompile Include="로그인성공.cpp" />
     <ClCompile Include="롤케이크 자르기.cpp" />
+    <ClCompile Include="명예의 전당(1).cpp" />
     <ClCompile Include="문자열 계산하기.cpp" />
     <ClCompile Include="문자열 밀기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
@@ -173,6 +174,7 @@
     <ClCompile Include="인덱스 바꾸기.cpp" />
     <ClCompile Include="자릿수 더하기.cpp" />
     <ClCompile Include="잘라서 배열로 저장하기.cpp" />
+    <ClCompile Include="전령망을 둘로 나누기.cpp" />
     <ClCompile Include="점의 위치 구하기.cpp" />
     <ClCompile Include="제곱수 판별하기.cpp" />
     <ClCompile Include="종이 자르기.cpp" />
