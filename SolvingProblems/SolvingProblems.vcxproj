@@ -180,6 +180,7 @@
     <ClCompile Include="종이 자르기.cpp" />
     <ClCompile Include="주차 요금 계산.cpp" />
     <ClCompile Include="중복된 문자제거.cpp" />
+    <ClCompile Include="최소직사각형.cpp" />
     <ClCompile Include="치킨 쿠폰.cpp" />
     <ClCompile Include="콜라.cpp" />
     <ClCompile Include="택배상자.cpp" />

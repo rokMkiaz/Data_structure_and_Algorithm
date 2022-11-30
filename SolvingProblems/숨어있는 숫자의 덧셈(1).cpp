@@ -8,9 +8,9 @@ return하도록 solution 함수를 완성해주세요.
 my_string은 소문자, 대문자 그리고 한자리 자연수로만 구성되어있습니다.
 
 * 입출력 예
-my_string	result
-"aAb1B2cC34oOp"	10
-"1a2b3c4d123"	16
+my_string	        result
+"aAb1B2cC34oOp" 	10
+"1a2b3c4d123"	    16
 
 * 입출력 예 #1
 "aAb1B2cC34oOp"안의 한자리 자연수는 1, 2, 3, 4 입니다.따라서 1 + 2 + 3 + 4 = 10 을 return합니다.
