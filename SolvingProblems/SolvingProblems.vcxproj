@@ -137,6 +137,7 @@
     <ClCompile Include="가까운 수.cpp" />
     <ClCompile Include="겹치는 선분의 길이.cpp" />
     <ClCompile Include="구슬을 나누는 경우의 수.cpp" />
+    <ClCompile Include="귤 고르기.cpp" />
     <ClCompile Include="기사단원의 무기.cpp" />
     <ClCompile Include="Webzen_Test.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
@@ -150,6 +151,7 @@
     <ClCompile Include="롤케이크 자르기.cpp" />
     <ClCompile Include="명예의 전당(1).cpp" />
     <ClCompile Include="문자열 계산하기.cpp" />
+    <ClCompile Include="문자열 나누기.cpp" />
     <ClCompile Include="문자열 밀기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
     <ClCompile Include="사라지는 발판.cpp" />

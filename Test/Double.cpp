@@ -31,6 +31,8 @@ void set_proverb(std::string** q, int n)
 	,"Actions speak louder than words."
 	,"Don't judge a book by its cover." };
 
+
+
 	*q = &array[n];
 }
 

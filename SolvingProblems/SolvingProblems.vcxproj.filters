@@ -185,6 +185,12 @@
     <ClCompile Include="최소직사각형.cpp">
       <Filter>CodingTest\분석</Filter>
     </ClCompile>
+    <ClCompile Include="문자열 나누기.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="귤 고르기.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">
