@@ -150,10 +150,13 @@
     <ClCompile Include="로그인성공.cpp" />
     <ClCompile Include="롤케이크 자르기.cpp" />
     <ClCompile Include="명예의 전당(1).cpp" />
+    <ClCompile Include="모음제거.cpp" />
     <ClCompile Include="문자열 계산하기.cpp" />
     <ClCompile Include="문자열 나누기.cpp" />
     <ClCompile Include="문자열 밀기.cpp" />
+    <ClCompile Include="배열 뒤집기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
+    <ClCompile Include="부족한 금액 계산하기.cpp" />
     <ClCompile Include="사라지는 발판.cpp" />
     <ClCompile Include="삼각형의 완성조건.cpp" />
     <ClCompile Include="삼총사.cpp" />
