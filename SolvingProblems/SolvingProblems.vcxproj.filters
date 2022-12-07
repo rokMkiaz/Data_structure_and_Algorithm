@@ -200,6 +200,12 @@
     <ClCompile Include="부족한 금액 계산하기.cpp">
       <Filter>CodingTest\분석</Filter>
     </ClCompile>
+    <ClCompile Include="약수의 개수와 덧셈.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
+    <ClCompile Include="2개 이하로 다른 비트.cpp">
+      <Filter>CodingTest\분석</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">

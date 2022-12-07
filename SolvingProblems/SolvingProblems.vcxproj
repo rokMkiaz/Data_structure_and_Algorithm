@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="2개 이하로 다른 비트.cpp" />
     <ClCompile Include="2차원 동전 뒤집기.cpp" />
     <ClCompile Include="7의 개수.cpp" />
     <ClCompile Include="A로 B 만들기.cpp" />
@@ -170,6 +171,7 @@
     <ClCompile Include="암호 해독.cpp" />
     <ClCompile Include="야간전술보행.cpp" />
     <ClCompile Include="약수 구하기.cpp" />
+    <ClCompile Include="약수의 개수와 덧셈.cpp" />
     <ClCompile Include="양과 늑대.cpp" />
     <ClCompile Include="양궁대회.cpp" />
     <ClCompile Include="연속된 수의 합.cpp" />
