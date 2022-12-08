@@ -158,6 +158,7 @@
     <ClCompile Include="배열 뒤집기.cpp" />
     <ClCompile Include="부대복귀.cpp" />
     <ClCompile Include="부족한 금액 계산하기.cpp" />
+    <ClCompile Include="빛의 경로 사이클.cpp" />
     <ClCompile Include="사라지는 발판.cpp" />
     <ClCompile Include="삼각형의 완성조건.cpp" />
     <ClCompile Include="삼총사.cpp" />

@@ -206,6 +206,9 @@
     <ClCompile Include="2개 이하로 다른 비트.cpp">
       <Filter>CodingTest\분석</Filter>
     </ClCompile>
+    <ClCompile Include="빛의 경로 사이클.cpp">
+      <Filter>CodingTest\탐색</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CodingTest">
