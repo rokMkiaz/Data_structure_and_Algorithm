@@ -24,3 +24,7 @@
 ![이진트리 탐색](https://user-images.githubusercontent.com/93506849/201507553-7197c341-cd5c-44ad-ab5c-c23f7e573483.JPG)
 - 탐색 트리 중 기본적으로 쓰이는 트리이다. 데이터당 자식을 두개 밖에 못가지며, 재귀함수 사용을 중점에 둔다.
 - 효율적인 검색과 정렬을 위해 사용된다.
+
+## 코딩 테스트 관련
+![최적화 주요사항](https://user-images.githubusercontent.com/93506849/208405807-aca10d87-a424-4a0f-8a20-1f90eae44560.JPG)
+![monobehaviour_flowchart](https://user-images.githubusercontent.com/93506849/208405854-e93e50bf-7f89-4405-831b-6c276c93e9bb.svg)
