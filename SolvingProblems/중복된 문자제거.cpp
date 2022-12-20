@@ -31,7 +31,7 @@ using namespace std;
 string solution(string my_string) {
     string answer = "";
     for (auto i : my_string) {
-        if (answer.find(i) == string::npos)answer += i;
+        if (answer.find(my_string) == string::npos)answer += i;
     }
     return answer;
 
