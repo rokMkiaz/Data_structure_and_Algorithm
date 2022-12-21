@@ -66,6 +66,20 @@ int main()
 
 	sizeof(Struct); //24바이트 사용
 
+	class vclass
+	{
+	public:
+		virtual void intNUM();
+		virtual void intNUM1();
+		virtual void intNUM2();
+		~vclass();
+		 int a ;
+		int b;
+
+	};
+
+	sizeof(vclass);//virtual 의 메모리량은 무조건 4바이트
+
 
 
 	//Shuffle
