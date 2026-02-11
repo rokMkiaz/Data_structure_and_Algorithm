@@ -1,0 +1,211 @@
+#### 실무사용 알고리즘 비교하기
+ - 배열(수동 shift), vector, map, (구조=연결리스트 list) 등 사용하여 삽입,삭제,조회 로 시간측정
+ - 어느 코드가 적합한지 찾아보고 사용하기
+#### 접기
+<details> 
+<summary>밴치마크 테스트</summary>
+  ```ruby
+// benchmark_realloc.cpp
+// g++ -O2 -std=c++20 benchmark_realloc.cpp -o bench
+
+#include <algorithm>
+#include <chrono>
+#include <cstdint>
+#include <cstring>
+#include <iomanip>
+#include <iostream>
+#include <list>
+#include <map>
+#include <memory>
+#include <random>
+#include <vector>
+
+using Clock = std::chrono::high_resolution_clock;
+
+struct Op {
+    enum Type { Insert, Erase, Find } type;
+    uint32_t pos_or_key;
+    uint32_t value;
+};
+
+/* ================= ManualArray (with reallocation) ================= */
+class ManualArray {
+public:
+    ManualArray() : cap_(0), size_(0) {}
+
+    size_t size() const { return size_; }
+
+    void insert(size_t pos, uint32_t v) {
+        if (size_ >= cap_) grow();
+        if (pos > size_) pos = size_;
+        std::memmove(data_.get() + pos + 1,
+            data_.get() + pos,
+            (size_ - pos) * sizeof(uint32_t));
+        data_[pos] = v;
+        ++size_;
+    }
+
+    void erase(size_t pos) {
+        if (size_ == 0) return;
+        if (pos >= size_) pos = size_ - 1;
+        std::memmove(data_.get() + pos,
+            data_.get() + pos + 1,
+            (size_ - pos - 1) * sizeof(uint32_t));
+        --size_;
+    }
+
+    bool find_value(uint32_t v) const {
+        for (size_t i = 0; i < size_; ++i)
+            if (data_[i] == v) return true;
+        return false;
+    }
+
+private:
+    void grow() {
+        size_t newCap = cap_ == 0 ? 8 : cap_ * 2;
+        std::unique_ptr<uint32_t[]> newData(new uint32_t[newCap]);
+        if (data_)
+            std::memcpy(newData.get(), data_.get(),
+                size_ * sizeof(uint32_t));
+        data_.swap(newData);
+        cap_ = newCap;
+    }
+
+    size_t cap_;
+    size_t size_;
+    std::unique_ptr<uint32_t[]> data_;
+};
+
+/* ================= helpers ================= */
+template <typename T1, typename T2>
+uint64_t ns(const T1& a, const T2& b)
+{
+    return std::chrono::duration_cast<std::chrono::nanoseconds>(b - a).count();
+}
+
+std::vector<Op> make_ops(size_t n, uint32_t seed = 1) {
+    std::mt19937 rng(seed);
+    std::uniform_int_distribution<int> pct(1, 100);
+    std::uniform_int_distribution<uint32_t> val(1, 50000);
+
+    std::vector<Op> ops;
+    ops.reserve(n);
+
+    uint32_t curSize = 10000;
+
+    for (size_t i = 0; i < n; ++i) {
+        Op op;
+        int r = pct(rng);
+
+        if (r <= 40) op.type = Op::Insert;
+        else if (r <= 80) op.type = Op::Erase;
+        else op.type = Op::Find;
+
+        op.pos_or_key = curSize ? rng() % curSize : 0;
+        op.value = val(rng);
+
+        if (op.type == Op::Insert) ++curSize;
+        if (op.type == Op::Erase && curSize) --curSize;
+
+        ops.push_back(op);
+    }
+    return ops;
+}
+
+/* ================= Benchmarks ================= */
+uint64_t bench_manual(const std::vector<Op>& ops) {
+    ManualArray a;
+    uint64_t found = 0;
+
+    auto t0 = Clock::now();
+    for (auto& op : ops) {
+        if (op.type == Op::Insert) a.insert(op.pos_or_key, op.value);
+        else if (op.type == Op::Erase) a.erase(op.pos_or_key);
+        else found += a.find_value(op.value);
+    }
+    auto t1 = Clock::now();
+    return ns(t0, t1);
+}
+
+uint64_t bench_vector(const std::vector<Op>& ops) {
+    std::vector<uint32_t> v; // reserve 안 함 → 재할당 포함
+    uint64_t found = 0;
+
+    auto t0 = Clock::now();
+    for (auto& op : ops) {
+        if (op.type == Op::Insert) {
+            size_t pos = v.empty() ? 0 : op.pos_or_key % v.size();
+            v.insert(v.begin() + pos, op.value);
+        }
+        else if (op.type == Op::Erase && !v.empty()) {
+            v.erase(v.begin() + (op.pos_or_key % v.size()));
+        }
+        else {
+            found += std::find(v.begin(), v.end(), op.value) != v.end();
+        }
+    }
+    auto t1 = Clock::now();
+    return ns(t0, t1);
+}
+
+uint64_t bench_list(const std::vector<Op>& ops) {
+    std::list<uint32_t> l;
+    uint64_t found = 0;
+
+    auto t0 = Clock::now();
+    for (auto& op : ops) {
+        if (op.type == Op::Insert) {
+            auto it = l.begin();
+            for (uint32_t i = 0; i < op.pos_or_key && it != l.end(); ++i) ++it;
+            l.insert(it, op.value);
+        }
+        else if (op.type == Op::Erase && !l.empty()) {
+            auto it = l.begin();
+            for (uint32_t i = 0; i < op.pos_or_key && it != l.end(); ++i) ++it;
+            if (it != l.end()) l.erase(it);
+        }
+        else {
+            for (auto v : l)
+                if (v == op.value) { ++found; break; }
+        }
+    }
+    auto t1 = Clock::now();
+    return ns(t0, t1);
+}
+
+uint64_t bench_map(const std::vector<Op>& ops) {
+    std::map<uint32_t, uint32_t> m;
+    uint64_t found = 0;
+
+    auto t0 = Clock::now();
+    for (auto& op : ops) {
+        if (op.type == Op::Insert) m.emplace(op.pos_or_key, op.value);
+        else if (op.type == Op::Erase) m.erase(op.pos_or_key);
+        else found += m.find(op.pos_or_key) != m.end();
+    }
+    auto t1 = Clock::now();
+    return ns(t0, t1);
+}
+
+/* ================= main ================= */
+int main() {
+    const size_t OPS = 20000;
+    auto ops = make_ops(OPS);
+
+    std::cout << "ops = " << OPS << "\n\n";
+    std::cout << "ManualArray : " << bench_manual(ops) << " ns\n";
+    std::cout << "vector      : " << bench_vector(ops) << " ns\n";
+    std::cout << "list        : " << bench_list(ops) << " ns\n";
+    std::cout << "map         : " << bench_map(ops) << " ns\n";
+}
+
+  ```
+결과 값
+ops = 20000
+
+ManualArray : 1398900 ns
+vector      : 9456700 ns
+list        : 3396078000 ns
+map         : 10500500 ns
+
+</details>
